@@ -79,7 +79,7 @@ class ViewController : UITableViewController
                 let managedContext = appDelegate.persistentContainer.viewContext
                
                 // Create entity for new objects
-                let favouriteEntity = NSEntityDescription.entity(forEntityName: "FavouritePokemon", in: managedContext)
+                let favouriteEntity = NSEntityDescription.entity(forEntityName: "FavoritePokemon", in: managedContext)
                 
                 // Get rows that were swiped
                 let selectedCell = tableView.cellForRow(at: indexPath)! as UITableViewCell
