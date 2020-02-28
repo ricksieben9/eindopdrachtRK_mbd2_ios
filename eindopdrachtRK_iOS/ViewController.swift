@@ -25,11 +25,13 @@ class ViewController : UITableViewController
              let task = URLSession.shared.dataTask(with: url) { data, response, error in
                 
                 if let receivedData = data {
-                    Swift.print("hier \(receivedData)")
+//                    Swift.print("hiero: \(receivedData)")
                     var pokemonDataOptional : AllPokemon?
                     
                     do {
                         pokemonDataOptional = try JSONDecoder().decode(AllPokemon.self, from: receivedData)
+//                        Swift.print("hieroo: \(pokemonDataOptional)")
+
                     }
                     catch {
                         print("Parsing of Pokémon failed!")
@@ -59,7 +61,7 @@ class ViewController : UITableViewController
     //UITableViewCell visuele representatie van een enkele row
     //dequeueReusableCell returned een cell object om te gebruiken / laten zien
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PokemonCell", for:indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PokemonCel", for:indexPath)
         cell.textLabel?.text = series[indexPath.row]
         return cell
     }

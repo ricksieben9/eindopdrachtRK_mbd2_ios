@@ -21,6 +21,14 @@ class DetailController:  UIViewController, UITableViewDataSource, UITableViewDel
    var pokemonname: String = " "
 
    @IBOutlet weak var pokemonImage: UIImageView!
+        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        nameLabel.text = pokemonname
+        loadData();
+    }
        
     func loadData(){
         if let url = URL(string: "https://pokeapi.co/api/v2/pokemon/\(pokemonname)") {

@@ -42,8 +42,8 @@
         <!--Alle pokemon-->
         <scene sceneID="M6F-7m-8BV">
             <objects>
-                <tableViewController id="21P-zN-Vf9" customClass="ViewController" customModule="eindopdrachtRK_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="c9J-dZ-sot" customClass="V">
+                <tableViewController id="21P-zN-Vf9" customClass="ViewController" customModule="eindopdrachtRK_iOS" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="c9J-dZ-sot">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,7 +83,7 @@
         <scene sceneID="YgQ-ja-efm">
             <objects>
                 <viewController title="Pokemon Detail" id="Wdt-kO-Rj3" customClass="DetailController" customModule="eindopdrachtRK_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hDX-IZ-dh7">
+                    <view key="view" contentMode="scaleToFill" id="hDX-IZ-dh7" customClass="VIewController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -272,7 +272,10 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naam" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PG9-4X-oba">
-                                <rect key="frame" x="158" y="108" width="98.5" height="49.5"/>
+                                <rect key="frame" x="157.5" y="108" width="99" height="49.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PG9-4X-oba" secondAttribute="height" multiplier="2:1" id="o3m-Tq-rTk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="36"/>
                                 <nil key="textColor"/>
                             </label>
@@ -391,6 +394,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bVH-Gj-x5K"/>
+        <segue reference="Hjf-Qp-pjL"/>
     </inferredMetricsTieBreakers>
 </document>
