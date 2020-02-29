@@ -18,7 +18,7 @@ class DetailController:  UIViewController, UITableViewDataSource, UITableViewDel
    @IBOutlet weak var weightLabel: UILabel!
    @IBOutlet weak var heightLabel: UILabel!
    
-   var pokemonname: String = " "
+   var pokemonName: String = " "
 
    @IBOutlet weak var pokemonImage: UIImageView!
         
@@ -26,12 +26,13 @@ class DetailController:  UIViewController, UITableViewDataSource, UITableViewDel
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        nameLabel.text = pokemonname
+        nameLabel.text = pokemonName
+        nameLabel.adjustsFontSizeToFitWidth = true;
         loadData();
     }
        
     func loadData(){
-        if let url = URL(string: "https://pokeapi.co/api/v2/pokemon/\(pokemonname)") {
+        if let url = URL(string: "https://pokeapi.co/api/v2/pokemon/\(pokemonName)") {
             
             let task = URLSession.shared.dataTask(with: url) { data, response, err in
                 DispatchQueue.main.async {

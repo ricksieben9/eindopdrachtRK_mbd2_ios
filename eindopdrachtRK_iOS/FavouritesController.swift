@@ -99,7 +99,7 @@ class FavouritesController: UITableViewController {
             
             let indexPath = tableView.indexPathForSelectedRow!
             let currentCell = tableView.cellForRow(at: indexPath )! as UITableViewCell
-            details.pokemonname = (currentCell.textLabel!.text ?? "def")
+            details.pokemonName = (currentCell.textLabel!.text ?? "def")
             
         }
         
