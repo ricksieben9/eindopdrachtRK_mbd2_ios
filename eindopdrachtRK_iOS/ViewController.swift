@@ -21,18 +21,17 @@ class ViewController : UITableViewController
 
     func loadData(){
         if let url = URL(string: "https://pokeapi.co/api/v2/pokemon") {
-            //URLSession coordineert groepen netwerktaken
+            //URLSession coördineert groepen netwerktaken
              let task = URLSession.shared.dataTask(with: url) { data, response, error in
                 
                 if let receivedData = data {
-//                    Swift.print("hiero: \(receivedData)")
+
                     var pokemonDataOptional : AllPokemon?
-                    
+                    // Try decoding the JSON-formatted Pokemon
                     do {
                         pokemonDataOptional = try JSONDecoder().decode(AllPokemon.self, from: receivedData)
-//                        Swift.print("hieroo: \(pokemonDataOptional)")
-
                     }
+                    // Print error if decoding JSON failed
                     catch {
                         print("Parsing of Pokémon failed!")
                     }
@@ -52,7 +51,7 @@ class ViewController : UITableViewController
         }
     }
     
-    //methode returned hoeveelheid elements in de series string[]
+    // methode returned hoeveelheid elements in de series string[]
     // UITableView representeerd data in rows & columns
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return series.count
@@ -61,7 +60,7 @@ class ViewController : UITableViewController
     //UITableViewCell visuele representatie van een enkele row
     //dequeueReusableCell returned een cell object om te gebruiken / laten zien
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PokemonCel", for:indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PokemonCell", for:indexPath)
         cell.textLabel?.text = series[indexPath.row]
         return cell
     }

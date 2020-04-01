@@ -17,16 +17,16 @@ class FavouritesController: UITableViewController {
         retrieveData()
     }
     
-    public var favoriteList:[String] = []
+    public var favouriteList:[String] = []
 
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return favoriteList.count
+        return favouriteList.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteCel", for:indexPath)
-        cell.textLabel?.text = favoriteList[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FavouriteCell", for:indexPath)
+        cell.textLabel?.text = favouriteList[indexPath.row]
         return cell
     }
     
@@ -34,7 +34,7 @@ class FavouritesController: UITableViewController {
                             trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
         ->   UISwipeActionsConfiguration? {
             
-            //setUp delete from favorites
+            //set up delete from favourites
             let delete = UIContextualAction(style: .normal, title: "Delete") { (action, view , nil) in
                 //Container is stored in the app delegate
                 guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
@@ -54,9 +54,9 @@ class FavouritesController: UITableViewController {
                     
                     do{
                         try managedContext.save()
-                        //Remove the pokemon from the favoritelist
-                        if let index = self.favoriteList.firstIndex(of: currentCell.textLabel!.text!) {
-                            self.favoriteList.remove(at: index)
+                        //Remove the pokemon from the favouritelist
+                        if let index = self.favouriteList.firstIndex(of: currentCell.textLabel!.text!) {
+                            self.favouriteList.remove(at: index)
                         }
                         //reload tableview
                         self.tableView.reloadData();
@@ -83,10 +83,10 @@ class FavouritesController: UITableViewController {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "FavoritePokemon")
         
         do {
-            //add all of the results to the favoritelist
+            //add all of the results to the favouritelist
             let result = try managedContext.fetch(fetchRequest)
             for data in result as! [NSManagedObject] {
-                favoriteList.append(data.value(forKey: "name") as! String)
+                favouriteList.append(data.value(forKey: "name") as! String)
             }
         }catch{
             print("Failed")
