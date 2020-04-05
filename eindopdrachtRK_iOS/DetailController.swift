@@ -12,6 +12,9 @@ class DetailController:  UIViewController, UITableViewDataSource, UITableViewDel
     
     private var abilities = [String]()
   
+    // '!' implicitly unwrapping
+    // If we don't do this, we have to manually unwrap each element
+    // This also causes/caused the error when forgetting to connect an outlet
    @IBOutlet weak var experienceLabel: UILabel!
    @IBOutlet weak var tableView: UITableView!
    @IBOutlet weak var nameLabel: UILabel!

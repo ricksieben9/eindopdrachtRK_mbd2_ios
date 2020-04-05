@@ -10,7 +10,7 @@
         <!--Favourites Controller-->
         <scene sceneID="H4m-bL-bqg">
             <objects>
-                <tableViewController id="Rvw-B4-qab" customClass="FavouritesController" customModule="eindopdrachtRK_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Rvw-B4-qab" customClass="FavouritesController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4K1-OC-9x4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,8 +42,8 @@
         <!--Alle pokemon-->
         <scene sceneID="M6F-7m-8BV">
             <objects>
-                <tableViewController id="21P-zN-Vf9" customClass="ViewController" customModule="eindopdrachtRK_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="c9J-dZ-sot" customClass="V">
+                <tableViewController id="21P-zN-Vf9" customClass="ViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="c9J-dZ-sot">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -82,8 +82,8 @@
         <!--Pokemon Detail-->
         <scene sceneID="YgQ-ja-efm">
             <objects>
-                <viewController title="Pokemon Detail" id="Wdt-kO-Rj3" customClass="DetailController" customModule="eindopdrachtRK_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hDX-IZ-dh7" customClass="VIewController">
+                <viewController title="Pokemon Detail" id="Wdt-kO-Rj3" customClass="DetailController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hDX-IZ-dh7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

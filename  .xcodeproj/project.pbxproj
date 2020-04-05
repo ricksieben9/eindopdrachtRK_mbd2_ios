@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C8847F5240997B80003F349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8847F3240997B70003F349 /* LaunchScreen.storyboard */; };
+		3C22859A2439C2930097C3A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C2285992439C2930097C3A2 /* LaunchScreen.storyboard */; };
 		3C93DBB123ED964600339731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DBB023ED964600339731 /* AppDelegate.swift */; };
 		3C93DBB723ED964800339731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C93DBB623ED964800339731 /* Assets.xcassets */; };
 		3C93DBBA23ED964800339731 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C93DBB923ED964800339731 /* Preview Assets.xcassets */; };
@@ -21,8 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3C8847F4240997B70003F349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../fuckoff/fuckoff/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3C93DBAD23ED964600339731 /* eindopdrachtRK_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eindopdrachtRK_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C2285992439C2930097C3A2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C93DBAD23ED964600339731 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C93DBB023ED964600339731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C93DBB623ED964800339731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C93DBB923ED964800339731 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		3C93DBAE23ED964600339731 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3C93DBAD23ED964600339731 /* eindopdrachtRK_iOS.app */,
+				3C93DBAD23ED964600339731 /* Pokedex.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,7 +74,7 @@
 				3C93DBB823ED964800339731 /* Preview Content */,
 				3CCDDDF92403BE0E000431A4 /* DetailController.swift */,
 				3CCDDDFB2403BF09000431A4 /* ViewController.swift */,
-				3C8847F3240997B70003F349 /* LaunchScreen.storyboard */,
+				3C2285992439C2930097C3A2 /* LaunchScreen.storyboard */,
 				3CCDDDFD2406F324000431A4 /* Main.storyboard */,
 				3CFD866A2407F4450025A1EF /* FavouritesController.swift */,
 			);
@@ -115,7 +115,7 @@
 			);
 			name = eindopdrachtRK_iOS;
 			productName = eindopdrachtRK_iOS;
-			productReference = 3C93DBAD23ED964600339731 /* eindopdrachtRK_iOS.app */;
+			productReference = 3C93DBAD23ED964600339731 /* Pokedex.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +133,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3C93DBA823ED964600339731 /* Build configuration list for PBXProject "eindopdrachtRK_iOS" */;
+			buildConfigurationList = 3C93DBA823ED964600339731 /* Build configuration list for PBXProject " " */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,8 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C93DBBA23ED964800339731 /* Preview Assets.xcassets in Resources */,
-				3C8847F5240997B80003F349 /* LaunchScreen.storyboard in Resources */,
 				3C93DBB723ED964800339731 /* Assets.xcassets in Resources */,
+				3C22859A2439C2930097C3A2 /* LaunchScreen.storyboard in Resources */,
 				3CCDDDFE2406F324000431A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,17 +181,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		3C8847F3240997B70003F349 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3C8847F4240997B70003F349 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3C93DBBF23ED964800339731 /* Debug */ = {
@@ -321,7 +310,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "RK.eindopdrachtRK-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pokedex;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -340,7 +329,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "RK.eindopdrachtRK-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pokedex;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -349,7 +338,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3C93DBA823ED964600339731 /* Build configuration list for PBXProject "eindopdrachtRK_iOS" */ = {
+		3C93DBA823ED964600339731 /* Build configuration list for PBXProject " " */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3C93DBBF23ED964800339731 /* Debug */,

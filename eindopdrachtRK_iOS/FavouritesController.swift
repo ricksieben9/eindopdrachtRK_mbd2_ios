@@ -75,7 +75,7 @@ class FavouritesController: UITableViewController {
     
     
     func retrieveData(){
-        //setup retrieve call
+        // setup retrieve call
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
         
         let managedContext = appDelegate.persistentContainer.viewContext

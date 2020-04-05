@@ -8,7 +8,7 @@
 
 import Foundation
 
-//Codable wordt gebruikt om van een JSON naar een swift format te gaan
+// Codable is used so that we can convert from JSON to swift format
 struct AllPokemon : Codable {
     var results : [results]
 }
@@ -22,7 +22,7 @@ struct sprites : Codable {
     var front_default : String?
 }
 
-// '?' betekend dat het object optioneel is. dus het int? betekent dat het OF leeg is, OF een int
+// '?' means an object is optionel. So 'int?' means that it's either empty or an int
 struct pokemonDetail : Codable {
     var abilities : [abilityObj]?
     var base_experience : Int?
